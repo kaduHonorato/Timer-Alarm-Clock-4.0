@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Timer | Alarm Clock 4.0</title>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/default_style.css">
+    <link rel = "stylesheet" href = "css/class_message_style.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+ </head>
+<body class = "default_content_box">
+
+    <div id = "container" >
+        <div class = "box_main_title">
+            <h1 class = "main_title">Timer / Alarm Clock 4.0</h1>
+        </div>
+        <div id = "box_time_intervals" class = "default_content_box">
+
+           
+            
+            
+        </div>
+
+        <footer>
+            <div class = "box_bt_add_new_time_interval">
+                <button id = "bt_add_new_time_interval">Add a New Time Interval</button>
+            </div> 
+    
+            <div class = "box_bt_show_credits">
+                <button id = "bt_show_credits">Credits</button>
+            </div>
+        </footer>
+      
+    </div>
+
+    <div class = "fill_all visibility_hidden">
+        <span id = "bt_close_input_data_menu" alt = "Close" title = "Close">X</span>
+        <div id = "input_data_menu">
+          
+        <input type = "hidden" name = "id_time_interval" value = "-1">
+         
+
+            <div>
+                <h1 id = "title_input_data_menu">Add New Time Interval</h1>
+            </div>
+          
+
+                <fieldset class = "type_configuration_box">
+                    <legend>Type</legend>
+                        
+                             <label><input type = "radio" value = "0" name = "tp_time_interval" checked >Alarm Clock</label>
+                             <label><input type = "radio" value = "1" name = "tp_time_interval">Timer</label>
+                    </fieldset>
+
+                    <fieldset class = "name_configuration_box">
+                      <legend>Name</legend>
+                      <input type = "text" id = "name_time_interval" placeholder = "Time Interval's Name" maxlength = "30" required>               
+                    </fieldset>
+
+
+                    <fieldset class = "time_configuration_box">
+                        <legend>Time</legend>
+                            <div>
+                                Hours    
+                                <select name = "hours_time_interval">
+                                </select>
+                            </div>
+                
+                            <div>
+                                Minutes    
+                            <select name = "minutes_time_interval">
+                            </select>
+                            </div>    
+                        
+                            <div>
+                                Seconds 
+                            <select name = "seconds_time_interval">
+                            </select>
+                            </div>
+                     </fieldset>
+         
+
+            <fieldset class = "tune_configuration_box">
+
+                        <legend>Tune</legend>
+            
+                            <label><input type = "radio" value = "0" name = "tune_time_interval" checked >Default</label>
+                            <label><input type = "radio" value = "1" name = "tune_time_interval">Double Hit</label>
+                            <label><input type = "radio" value = "2" name = "tune_time_interval">School Bell</label>
+                            <label><input type = "radio" value = "3" name = "tune_time_interval">Japanese School Bell</label>
+                            <label><input type = "radio" value = "4" name = "tune_time_interval">Beep</label>
+                    
+                            <fieldset>
+                                <legend>Preview</legend>
+                                <audio src = "media/default.mp3" id = "audio_preview" controls loop></audio> 
+                            </fieldset>
+                        
+         
+            </fieldset>
+
+            <fieldset class = "automatic_start_configuration_box">
+                <legend>Start time interval's countdown automatically</legend>
+                <input type = "checkbox" id = "automatic_start_time_interval">
+            </fieldset>
+
+            <fieldset class = "time_automatic_interruption_configuration_box">
+                <legend>Stop time interval's tune automatically after</legend>
+            
+                <label><input type = "radio" value = "0" name = "time_automatic_interrupt_time_interval" checked >Don't stop</label>
+                <label><input type = "radio" value = "10" name = "time_automatic_interrupt_time_interval">10 seconds</label>
+                <label><input type = "radio" value = "20" name = "time_automatic_interrupt_time_interval">20 seconds</label>
+                <label><input type = "radio" value = "30" name = "time_automatic_interrupt_time_interval">30 seconds</label>
+                <label><input type = "radio" value = "40" name = "time_automatic_interrupt_time_interval">40 seconds</label>
+                <label><input type = "radio" value = "50" name = "time_automatic_interrupt_time_interval">50 seconds</label>
+                <label><input type = "radio" value = "60" name = "time_automatic_interrupt_time_interval">60 seconds</label>
+            </fieldset>
+         
+            <div id = "box_bt_save_data">
+                <button id = "bt_save_data">Save</button>
+            </div>
+       
+        </div>
+    </div>
+
+    <div class = "fill_all visibility_hidden">
+        <span id = "bt_close_box_credits" alt = "Close" title = "Close">X</span>
+
+        <div id = "box_credits">
+
+            <h2>Credits</h2>
+            
+            <ul>
+                <li>Projected and developed by<br><a href = "https://github.com/kaduHonorato" title = "Carlos Eduardo">Carlos Eduardo</a></li>
+                <li>Icons made by<br> <a href="https://www.freepik.com" title = "Freepik">Freepik.com</a>, <a href="https://www.flaticon.com/authors/kiranshastry" title = "Kiranshastry">Kiranshastry</a> and <a href = "https://icons8.com/icon/41563/sound" title = "icons8">icons8.com</a>
+                </li>   
+                <li>Default tune by<br><a href = "http://www.freesfx.co.uk" title = "Default">freesfx.co.uk</a></li> 
+                <li>Double Hit tune by<br><a href = " https://www.youtube.com/watch?v=JiTy2gLdOu8" title = "Double Hit tune">Programmer's Music
+                </a></li> 
+                <li>School Bell tune by<br><a href = "#" title = "School Bell tune">???</a></li> 
+                <li>Japanese School Bell tune by<br><a href = "https://otologic.jp" title = "Japanese School Bell tune by">otologic.jp</a></li> 
+                <li>Beep tune by<br><a href = "http://www.soundbible.com" title = "Beep">soundbible.com</a></li> 
+            </ul>
+        </div>
+    </div>
+
+
+    <template id = "template_time_interval">
+
+        <div class = "time_interval">
+            
+            <div class = "box_basic_info_time_interval">
+                <span class = "txt_basic_info_time_interval"></span>
+                <span class = "bt_edit_time_interval"></span>
+                <span class = "bt_remove_time_interval"></span>
+            </div>
+            <div class = "box_main_info_time_interval">
+                <div>
+                    <h2 class = "name_time_interval"></h2>
+                </div>
+                
+                <div>
+                    <h3 class = "remain_time_time_interval">00:00:00</h3>
+                </div>
+                
+                <div class = "box_buttons_time_interval">
+                    <button class = "bt_start_resume_time_interval custom_bt">Start</button>
+                    <button class = "bt_pause_time_interval custom_bt">Pause</button>
+                    <button class = "bt_cancel_time_interval custom_bt">Cancel</button>
+                </div>
+                
+                
+                <audio class = "tune_time_interval" loop></audio>
+
+                <div class = "box_tune_notification">   
+                    <div class = "box_tune_notification_img box_img">
+                        <img src = "images/tune_notification_img.png" alt = "" class = "tune_notification_img">
+                    </div>
+                 
+                    <h2 class = "tune_notification_txt"></h2>    
+                    <button class = "bt_finish_tune_notification custom_bt">Finish</button>
+                </div>
+
+            </div>
+        </div>
+
+    </template>
+
+
+    <template id = "temp_alert_box">
+        <div class = "fill_all">
+            <div class = "alert_box">
+                <div>
+                    <h1 class = "title_alert_box">Message</h1>
+                </div>   
+            
+                <div>
+                    <span class = "txt_alert_box"></span>
+                </div>
+                
+                <div>
+                    <button class = "bt_alert_box">Ok</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
+    <template id = "temp_confirm_box">
+        <div class = "fill_all">
+            <div class = "confirm_box">
+                <div>
+                    <h1 class = "title_confirm_box">Confirm</h1>
+                </div>   
+
+                <div>
+                    <span class = "txt_confirm_box"></span>
+                </div>
+                
+                <div>
+                    <button class = "bt_confirm_box no">No</button>
+                    <button class = "bt_confirm_box yes">Yes</button>
+                </div>
+            </div>
+        </div>
+    </template>
+ 
+    <script src = "javascript/local_storage_data.js"></script>
+    <script src = "javascript/message.js"></script>
+    <script src = "javascript/time_interval.js"></script>
+    <script src = "javascript/script.js"></script>
+</body>
+</html>
